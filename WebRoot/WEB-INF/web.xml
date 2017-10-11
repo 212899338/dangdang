@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!--对BookListServlet配置-->
+  <servlet>
+  	<servlet-name>BookList</servlet-name>
+  	<servlet-class>com.tedu.web.BookListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BookList</servlet-name>
+	<url-pattern>/booklist</url-pattern>  
+  </servlet-mapping>
+  
+    <!--对RegisterServlet配置-->
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<servlet-class>com.tedu.web.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+	<url-pattern>/register</url-pattern>  
+  </servlet-mapping>
+  
+      <!--对ImageCodeServlet配置-->
+  <servlet>
+  	<servlet-name>ImageCode</servlet-name>
+  	<servlet-class>com.tedu.web.ImageCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ImageCode</servlet-name>
+	<url-pattern>/image</url-pattern>  
+  </servlet-mapping>
+  
+        <!--对CheckEmailServlet配置-->
+  <servlet>
+  	<servlet-name>CheckEmail</servlet-name>
+  	<servlet-class>com.tedu.web.CheckEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckCode</servlet-name>
+    <servlet-class>com.tedu.web.CheckCodeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>CheckEmail</servlet-name>
+	<url-pattern>/email</url-pattern>  
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCode</servlet-name>
+    <url-pattern>/checkcode</url-pattern>
+  </servlet-mapping>
+  </web-app>
